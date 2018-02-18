@@ -1,0 +1,108 @@
+.close {
+  float: right;
+  color: #000;
+  i {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+form {
+    margin: 20px 60px 0px 60px;
+    text-align: center;
+    h1 {
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    p {
+      text-align: left;
+      margin-left: 16px;
+    }
+    div {
+      display: inline-block;
+      text-align: left;
+    }
+    input {
+      border: 1px solid #eae8e8;
+      background: #f7f7f7;
+      width: 230px;
+      height: 30px;
+      margin-top: 10px;
+    }
+    .email {
+      float: left;
+      margin-left: 16px;
+    }
+    .name {
+      margin-right: 35px;
+      margin-bottom: 20px;
+    }
+    .message {
+      margin-top: 30px;
+    }
+    textarea {
+      border: 1px solid #eae8e8;
+      background: #f7f7f7;
+      margin-top: 10px;
+    }
+    .check {
+      text-align: center;
+      .agree {
+        font-size: 20px;
+        position: relative;
+        top: -8px;
+      }
+      input {
+        width: 50px;
+        color: red;
+      }
+    }
+    button {
+      border-radius:0px;
+      width: 170px;
+      height: 50px;
+      font-size: 22px;
+      background: #db0808;
+      color: #fff;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    a {
+      color: #2d7f91;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .name > input, .phone > input, .email > input, textarea {
+      width: 450px ;
+    }
+    .name, .phone, .email, textarea {
+      margin: 0 auto !important;
+    }
+    .email {
+      padding-top: 10px;
+      float: none !important;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .name > input, .phone > input, .email > input, textarea {
+      width: 350px ;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    .name > input, .phone > input, .email > input, textarea {
+      width: 250px ;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .name > input, .phone > input, .email > input, textarea {
+      width: 150px ;
+    }
+    .agree {
+      font-size: 16px !important;
+    }
+  }

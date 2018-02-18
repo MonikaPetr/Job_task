@@ -1,0 +1,26 @@
+<a class="close" (click)="closeDialog()"><i class="material-icons">clear</i></a>
+<form action="" (ngSubmit)="onSave(f)" #f="ngForm" name='myForm' >
+  <h1>Your details here</h1>
+  <div class="name">
+    <label for="name">Full name *</label><br>
+    <input type="text" name="name" id="name" [(ngModel)]="message.name" required>
+  </div>
+  <div class="phone">
+    <label for="phone">Phone</label><br>
+    <input type="text" id="phone" name="phone" [(ngModel)]="message.phone">
+  </div><br>
+  <div class="email">
+    <label for="email">Email *</label><br>
+    <input type="text" id="email" name="email" [(ngModel)]="message.email" required>
+  </div><br>
+  <div class="message">
+    <label for="message">Your message</label><br>
+    <textarea name="" id="message" name="message" cols="60" rows="10" [(ngModel)]="message.message" ></textarea>
+  </div>
+  <p>* Required</p>
+  <div class="check">
+    <input type="checkbox" id='agree' name="agree" [(ngModel)]="message.agree" required><span class="agree">Agree on terms</span>
+  </div><br>
+  <button  name="myForm" [disabled]="!f.form.valid" (click)="openSubDialog()" (click)="closeDialog()" type="submit"   mat-raised-button>Get in touch</button><br>
+  <a href="">Terms and conditions</a>
+</form>

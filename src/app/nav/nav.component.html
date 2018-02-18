@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <img src="../assets/Logo.jpg" alt="">
+    <span class="example-spacer"></span>
+    <a href="#home">Home</a>
+    <a href="#product">Products</a>
+    <a href="#success">Case</a>
+    <a href="">Contact</a>
+    <button class='menu' mat-button [matMenuTriggerFor]="menu" ><i class="material-icons">menu</i></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Home</button>
+        <button mat-menu-item>Products</button>
+        <button mat-menu-item>Case</button>
+        <button mat-menu-item>Contact</button>
+      </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
